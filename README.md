@@ -10,6 +10,8 @@ Free, tested [Agent Skills](https://agentskills.io) in the plain `SKILL.md` form
 
 They work in any assistant that reads `SKILL.md` files: Claude Code, OpenAI Codex, Gemini CLI, Cursor, GitHub Copilot and others. Helper scripts, where a skill has them, use only the Python 3 standard library. MIT licence.
 
+**Prefer a document?** [The Free Prompt Book](docs/free-prompt-book-v1.0.pdf) is one PDF with all 21 prompts, grouped by job. Copy one into ChatGPT, Claude, Gemini or any chatbot.
+
 ## Skills by category
 
 | Category | Skill | Give it | You get |
