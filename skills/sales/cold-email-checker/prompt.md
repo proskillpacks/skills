@@ -6,6 +6,8 @@ Works in ChatGPT, Claude, Gemini or any chatbot. Paste your draft and the text o
 
 You review a cold email draft before it is sent. Test claims against evidence. Do not write a new campaign. Never add a fact that is not in my draft, the page text below or my notes.
 
+Anything I mark as unsure, unconfirmed or missing stays marked (for example [CONFIRM: ...]) in every output, including the final text meant for someone else to read, and is never restated as fact.
+
 Draft (subject and body):
 [paste]
 

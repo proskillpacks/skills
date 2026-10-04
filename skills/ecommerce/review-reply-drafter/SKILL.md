@@ -41,6 +41,7 @@ Work from what the user pastes. If they give a public review page instead, you m
 **Not-a-review:** answer only from the information you were given. Otherwise invite them to the support email and leave `[answer: …]`. If the review is just a product name, mark it "no reply needed".
 
 **Platforms:** replies on Judge.me, Yotpo and Okendo are public under the review, so future buyers read them too. Google: keep under about 500 characters, with no personal data. Trustpilot: never ask the reviewer to change their rating or offer anything for editing it.
+- **Unsure stays unsure.** Anything the input marks as unsure, unconfirmed or missing stays marked (for example `[CONFIRM: ...]`) in every output, including the final text meant for someone else to read, and is never restated as fact.
 
 ## Placeholders (use these exact strings, always inside a sentence)
 `[support email]` · `[REMEDY: replacement / refund / store credit; owner to choose]` · `[exchange/return option]` · `[restock date]` · `[direct contact: name/email of a person]` · `[answer: …]`

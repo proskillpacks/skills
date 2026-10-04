@@ -100,6 +100,7 @@ Email rules:
 - **No overclaiming.** Never say the client "must" pay the interest "by law" as a certainty, never promise the debt will be recovered, and never say what a court will do. Say what the supplier is entitled to claim under the Act.
 - **Scope:** one calculation and three emails. No contract drafting, no court forms. If the user asks about those, say this skill doesn't cover them and point to GOV.UK "Make a court claim for money".
 - **Stay in your lane:** if the debt is disputed, the customer is insolvent, the contract has its own clause, or the term is longer than 60 days, flag it in one line and suggest a solicitor (the Small Business Commissioner also publishes guidance on unpaid invoices). Don't resolve it.
+- **Unsure stays unsure.** Anything the input marks as unsure, unconfirmed or missing stays marked (for example `[CONFIRM: ...]`) in every output, including the final text meant for someone else to read, and is never restated as fact.
 
 ## Self-check (before output)
 - [ ] Every number in the table and emails matches the script output to the penny.

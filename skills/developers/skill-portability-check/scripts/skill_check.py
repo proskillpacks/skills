@@ -39,6 +39,9 @@ PATHS = {
 }
 FALLBACK = re.compile(r"(?:if|when)\s+(?:\w+\s+){0,3}?(?:can ?not|can't|cannot|don't have|do not have|have no|are unable|aren't able|unable to|is not available|isn't available|are not available|is unavailable|no access)|fall ?back|otherwise,?\s+(?:ask|use|paste)|ask the user to (?:paste|provide|supply)|if you only have\b|or (?:the user )?pastes?\b|\bpasted (?:text|html|content|the|it)\b|no (?:shell|web|network|python)|if .{0,40}(?:isn't|is not|not) installed", re.I)
 NEEDS_TOOLS = re.compile(r"\b(?:curl|wget|fetch(?:es|ing)?\b|web (?:page|search|tool)|network|internet|python3?\b|bash\b|shell|run the script|git (?:log|diff|show))", re.I)
+WRITES_FOR_OTHERS = re.compile(r"^\s*(?:writes?|drafts?|rewrites?|produces?|generates?|builds?)\b[^.;\n]{0,80}?\b(?:e-?mails?|repl(?:y|ies)|letters?|quotes?|proposals?|pages?|posts?|messages?|macros?|copy|newsletters?|case stud(?:y|ies)|articles?|threads?|descriptions?|responses?|listings?|ads?|bullets?|summar(?:y|ies))\b", re.I)
+TURNS_INTO_TEXT = re.compile(r"^\s*turns?\b[^.;\n]{0,100}?\binto (?:an? |the |one |short )*(?:\w+ )?(?:e-?mails?|repl(?:y|ies)|letters?|quotes?|proposals?|pages?|posts?|messages?|macros?|newsletters?|case stud(?:y|ies)|articles?|threads?|responses?|bug reports?|help articles?|summar(?:y|ies))\b", re.I)
+UNSURE_RULE = re.compile(r"unsure|uncertain|unconfirmed|unverified|not sure|\[CONFIRM", re.I)
 WHEN = re.compile(r"\b(?:use when|use this (?:skill )?when|when the user|when someone|when you|trigger|use for|use if|invoke when|if the user)\b", re.I)
 SPEC_KEYS = {"license", "compatibility", "metadata"}
 SCRIPT_EXT = {".py": "Python", ".sh": "shell", ".bash": "shell", ".js": "JavaScript", ".mjs": "JavaScript", ".cjs": "JavaScript", ".ts": "TypeScript", ".rb": "Ruby", ".go": "Go", ".ps1": "PowerShell"}
@@ -186,6 +189,8 @@ def check_skill(path):
     needs = NEEDS_TOOLS.search(body)
     if needs and not FALLBACK.search(body):
         W(f"the text relies on a tool or the network ('{needs.group(0)}') but never says what to do when it is missing (for example 'if you have no shell, ask the user to paste it')")
+    if desc and (WRITES_FOR_OTHERS.search(desc) or TURNS_INTO_TEXT.search(desc)) and not UNSURE_RULE.search(text):
+        W("the description says it writes text for other people to read, but nothing says what to do with input that is unsure or unconfirmed; add a rule such as 'Anything the input marks as unsure, unconfirmed or missing stays marked (for example [CONFIRM: ...]) in every output, including the final text, and is never restated as fact'")
     lines = body.count("\n") + 1
     res["lines"] = lines + fm_lines
     if lines > 500:
@@ -224,6 +229,7 @@ RULES = [  # (id, regex on the finding text)
     ("SC014", r"^body is \d+ lines; move"),
     ("SC015", r"^broken link"),
     ("SC016", r"^mentions .* but the file is not"),
+    ("SC017", r"^the description says it writes text for other people"),
     ("SC100", r"^frontmatter key .* is in the public spec"),
     ("SC101", r"^agent products named"),
     ("SC102", r"^body is \d+ lines$"),

@@ -86,3 +86,6 @@ Without a shell, output the import CSV as a code block with the header `URL hand
    - If the store has a product feed (Google, Meta), the new titles flow through on the next sync. Apps that matched products by title (rare) may need checking.
 
 Keep the tone neutral and factual (no comments on how messy or tidy the catalog is). Don't promise traffic or ranking gains. Consistent titles make the catalog easier to scan and search. Say only that.
+
+## Rules
+- **Unsure stays unsure.** Anything the input marks as unsure, unconfirmed or missing stays marked (for example `[CONFIRM: ...]`) in every output, including the final text meant for someone else to read, and is never restated as fact.

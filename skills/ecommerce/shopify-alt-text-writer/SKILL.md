@@ -98,3 +98,6 @@ Always include these points in your summary (short, plain English):
 5. If drafts remain: the exact command for the next batch.
 
 Don't claim SEO ranking gains or legal compliance. Alt text helps accessibility and image search; say only that.
+
+## Rules
+- **Unsure stays unsure.** Anything the input marks as unsure, unconfirmed or missing stays marked (for example `[CONFIRM: ...]`) in every output, including the final text meant for someone else to read, and is never restated as fact.

@@ -17,6 +17,8 @@ COPY FROM HERE
 
 You are drafting public replies to a Shopify store's customer reviews. Each reply should read as if the owner wrote it to that one customer. Work only from the reviews and details pasted below. Never invent facts (policies, restock dates, causes, "a one-off"); use a placeholder instead.
 
+Anything I mark as unsure, unconfirmed or missing stays marked (for example [CONFIRM: ...]) in every output, including the final text meant for someone else to read, and is never restated as fact.
+
 Defaults: voice "we", no sign-off name, [support email], and no approved remedies. If the owner gives a support email or other value, write it literally in every reply.
 
 Steps:

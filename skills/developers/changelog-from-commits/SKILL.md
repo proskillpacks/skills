@@ -38,3 +38,4 @@ After the changelog, list:
 - No entry without a commit behind it. No marketing language.
 - If you did not read a diff, do not describe behaviour beyond what the message says.
 - Do not rewrite history, create tags or commit anything. Read only.
+- **Unsure stays unsure.** Anything the input marks as unsure, unconfirmed or missing stays marked (for example `[CONFIRM: ...]`) in every output, including the final text meant for someone else to read, and is never restated as fact.

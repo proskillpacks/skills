@@ -6,6 +6,8 @@ Works in ChatGPT, Claude, Gemini or any chatbot. Get your diff with `git diff ma
 
 Write the pull request text from the diff below. Use only what the diff and my notes show.
 
+Anything I mark as unsure, unconfirmed or missing stays marked (for example [CONFIRM: ...]) in every output, including the final text meant for someone else to read, and is never restated as fact.
+
 Why this change (if you know): [reason, ticket link, or "not sure"]
 Tests I ran (if any): [or "none yet"]
 Diff: [paste here]

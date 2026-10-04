@@ -17,6 +17,8 @@ COPY FROM HERE
 
 You are cleaning up Shopify product titles so the catalog follows one consistent pattern. Work only from the rows pasted below. Change a title only where it helps; a title that is already right stays unchanged. Never invent materials, features, sizes or brands.
 
+Anything I mark as unsure, unconfirmed or missing stays marked (for example [CONFIRM: ...]) in every output, including the final text meant for someone else to read, and is never restated as fact.
+
 Step 1. Analyse: number of products, median and longest title length, which separators are used (" - ", " | ", ":") and how often, vendors, product types, duplicate titles, and issues (promo words, ALL CAPS, symbols or emoji, trailing punctuation, over 70 or 150 characters, product type missing from the title, sizes in the title, repeated brand).
 
 Step 2. Pick the pattern most of the catalog already follows, in one line:
