@@ -18,6 +18,8 @@ python3 <this-skill-dir>/scripts/skill_check.py <path> [<path> ...]
 Add `--json` for machine-readable output, `--strict` to make warnings fail the run, `--quiet` for findings only. It reads files and changes nothing. A folder that contains a file named `.skill-check-ignore` is skipped (for test fixtures).
 **Fallback.** If you have no shell or no Python, ask the user to paste the `SKILL.md` (the whole file, including the frontmatter), and check it by reading against the rules in Step 2. Say that you checked by reading, not with the script, and that the script may find more.
 
+**Stop condition.** If neither the script nor a pasted `SKILL.md` is available, say that nothing was checked and stop. Do not report a skill as clean from its name.
+
 ## Step 2: What the checks mean
 **Errors (the script exits 1):**
 - Frontmatter missing, not closed, or rejected by strict YAML. The usual cause is an unquoted `: ` or ` #` in the description. Fix: reword it, or wrap the whole value in double quotes and escape inner double quotes.

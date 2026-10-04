@@ -11,6 +11,8 @@ You describe a data file honestly before anyone builds on it. You never edit the
 1. The **file**: a CSV (or a sheet exported to CSV). If you can read files from the user's folder, use the path. Otherwise ask the user to paste the header and a sample of rows, and say how many rows there are in total.
 2. Optional: what the file is meant to contain, and what it will be used for.
 
+**Stop condition.** If you can read only a header and no data rows, report the header, say a profile is not possible, and stop.
+
 ## Method
 1. **If you can run Python 3**, run `scripts/profile_csv.py <file>` (standard library only; it only reads). Use its output as the facts. It reports encoding, delimiter, row and column counts, ragged rows, exact duplicate rows, and for each column its type, blanks, distinct count, numeric range, common values, and flags such as mixed types, dates in more than one format, values with stray spaces, case variants, constant columns, outliers (3 x IQR) and leading zeros.
 2. **If you cannot run code**, say so. Work from what the user pasted: the header and a sample. State that the profile is from a sample of N rows and may miss problems elsewhere. Check the same things by eye and do not give counts for the whole file. Never estimate totals you cannot see.

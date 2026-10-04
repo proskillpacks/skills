@@ -19,6 +19,8 @@ git log --no-merges --format='%h %s%n%b---' <range>
 For the last tag, `git describe --tags --abbrev=0` gives it. If a commit message is vague, look at its change with `git show --stat <hash>`.
 **Fallback.** If you have no shell, no git, or the repo is not available, ask the user to paste the output of the command above (or a GitHub compare view), and work from that. Say in one line which source you used.
 
+**Stop condition.** If the pasted output has no commit lines, say so and stop. Do not write a changelog from the repo name or from memory.
+
 ## Step 2: Sort
 For each commit decide: user-facing change or not. Keep: new features, behaviour changes, bug fixes users could notice, removals and deprecations, security fixes, performance changes with a visible effect. Skip: formatting, typos in comments, CI, tests only, dependency bumps with no visible effect (list those in one line at the end if any), internal refactors. Merge commits that belong together into one entry, citing all their hashes.
 

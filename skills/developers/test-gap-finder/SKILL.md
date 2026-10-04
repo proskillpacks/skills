@@ -15,6 +15,8 @@ You read a change and the tests around it, and say what the change does that no 
 If you have a shell and the repo: `git diff <base>...<head>` (or `git show <commit>`), then find the tests that mention the changed files or functions by searching test directories for the changed names and file paths.
 **Fallback.** If you have no shell or repo, ask the user to paste the diff and the test file(s) that sit nearest the changed code, and say which files you could not see. Everything you cannot see is Unknown.
 
+**Stop condition.** If you cannot see both the diff and at least one test file, say which one is missing and stop. Do not mark any behaviour Covered without having read a test.
+
 ## Step 2: List the behaviours
 Go hunk by hunk. For each, write the behaviour in one plain sentence, in the code's terms. Look for: new or changed branches and conditions; new error paths and thrown errors; boundaries (empty, zero, one, maximum, off by one); new or changed parameters, options and defaults; removed checks or guards; changed return values or side effects; concurrency, ordering and retry changes; and changes to public interfaces.
 
