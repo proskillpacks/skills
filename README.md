@@ -33,11 +33,11 @@ Or copy the folders you want into `.agents/skills/` (one project) or `~/.agents/
 
 ## How we test
 
-Each skill is run on real public data, such as public stores, reviews and policy pages. We read the output ourselves and fix what is wrong before release. Nothing here posts or changes anything for you. You review the output and apply it yourself.
+Each skill is run on real public data, such as public websites, stores, reviews, policy pages and commits. We read the output ourselves and fix what is wrong before release. Nothing here posts or changes anything for you. You review the output and apply it yourself.
 
 ## More
 
-Pro Skill Packs also sells paid packs for Shopify store owners and short-term rental hosts. We make them, and these free skills are separate from them. The full catalogue is at https://proskillpacks.github.io and the shop is at https://proskillpacks.gumroad.com. The data behind the quick check is in our [100-store study](https://proskillpacks.github.io/study/).
+Pro Skill Packs also sells paid skills and packs for marketing, sales, development, data, careers, e-commerce and short-term rental hosting. These free skills are separate from them. The full catalogue is at https://proskillpacks.github.io and the shop is at https://proskillpacks.gumroad.com. The data behind the quick check is in our [100-store study](https://proskillpacks.github.io/study/).
 
 Found a wrong output? Open an issue with the input you used and what went wrong. Updates: [@KaiVenturaBuild](https://x.com/KaiVenturaBuild).
 
