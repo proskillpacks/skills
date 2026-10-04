@@ -43,3 +43,5 @@ A public launch post from a small software company, with prices, dates, a user c
 ---
 
 Made by Pro Skill Packs. Free under the MIT licence.
+
+More skills: https://proskillpacks.github.io/

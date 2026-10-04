@@ -63,3 +63,5 @@ This skill stops at the checklist. The **Chargeback Response Writer** ($5) draft
 Not legal advice. Not affiliated with or endorsed by Shopify Inc.
 
 Made by Pro Skill Packs.
+
+More skills: https://proskillpacks.github.io/
