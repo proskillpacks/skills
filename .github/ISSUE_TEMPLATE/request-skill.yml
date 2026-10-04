@@ -1,0 +1,65 @@
+name: Request a skill
+description: Tell us which job you want a skill for.
+title: "Skill request: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for telling us. Short and concrete is best. We read every request. We cannot promise a date or that we will build it.
+  - type: textarea
+    id: job
+    attributes:
+      label: The job
+      description: What do you want done? One job, in plain words.
+      placeholder: "Example: turn a customer's chargeback notice into a response I can paste into Shopify."
+    validations:
+      required: true
+  - type: input
+    id: who
+    attributes:
+      label: Who does this job
+      description: Your role or the kind of person who does it.
+      placeholder: "Example: owner of a small online shop"
+    validations:
+      required: true
+  - type: textarea
+    id: input
+    attributes:
+      label: What you paste in
+      description: Text, a table, a link, a file? Do not paste private data here.
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: What you want back
+      description: What would a good result look like?
+    validations:
+      required: true
+  - type: dropdown
+    id: assistant
+    attributes:
+      label: Which assistant do you use
+      options:
+        - ChatGPT
+        - Claude
+        - Gemini
+        - Codex
+        - Cursor
+        - GitHub Copilot
+        - Another one
+        - None yet
+    validations:
+      required: false
+  - type: dropdown
+    id: pay
+    attributes:
+      label: Would you pay for this skill (optional)
+      description: Only so we know what matters most. No obligation.
+      options:
+        - Not sure
+        - No, I want it free
+        - Yes, up to about 10 USD
+        - Yes, more than 10 USD
+    validations:
+      required: false

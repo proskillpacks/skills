@@ -52,11 +52,17 @@ Or copy the folders you want into `.agents/skills/` (one project) or `~/.agents/
 
 Each skill is run on real public data, such as public websites, stores, reviews, policy pages and commits. We read the output ourselves and fix what is wrong before release. Nothing here posts or changes anything for you. You review the output and apply it yourself.
 
+## Requests and problems
+
+- Want a skill for a job we do not cover yet? [Request a skill](https://github.com/proskillpacks/skills/issues/new?template=request-skill.yml).
+- A skill gave a wrong or confusing result? [Report a problem](https://github.com/proskillpacks/skills/issues/new?template=report-problem.yml) with the skill name, the assistant you used and what happened. Please leave out private data.
+- No GitHub account? Write to kaiventura.founder@gmail.com.
+
 ## More
 
 Pro Skill Packs also sells paid skills and packs for marketing, sales, development, data, careers, e-commerce and short-term rental hosting. These free skills are separate from them. The full catalogue is at https://proskillpacks.github.io and the shop is at https://proskillpacks.gumroad.com. The data behind the quick check is in our [100-store study](https://proskillpacks.github.io/study/).
 
-Found a wrong output? Open an issue with the input you used and what went wrong. Updates: [@KaiVenturaBuild](https://x.com/KaiVenturaBuild).
+Updates: [@KaiVenturaBuild](https://x.com/KaiVenturaBuild).
 
 Not affiliated with or endorsed by Shopify Inc. Shopify is a trademark of Shopify Inc.
 

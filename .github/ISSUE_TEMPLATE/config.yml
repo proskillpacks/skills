@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Frequently asked questions
+    url: https://proskillpacks.github.io/faq/
+    about: What a skill is, which assistants it works with, and how testing works.
+  - name: How to install Agent Skills
+    url: https://proskillpacks.github.io/guides/how-to-install-agent-skills/
+    about: Step by step for Claude, Codex, Gemini CLI, Cursor and Copilot.

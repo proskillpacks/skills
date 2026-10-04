@@ -1,0 +1,37 @@
+name: Report a problem with a skill
+description: A skill gave a wrong, incomplete or confusing result, or failed to load.
+title: "Problem: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks. A problem report is the fastest way to make a skill better. Please do not paste private or customer data.
+  - type: input
+    id: skill
+    attributes:
+      label: Which skill
+      description: The skill name or folder name.
+      placeholder: "Example: cold-email-checker"
+    validations:
+      required: true
+  - type: input
+    id: assistant
+    attributes:
+      label: Assistant and model you used
+      placeholder: "Example: Claude Code with Sonnet, or ChatGPT (pasted prompt)"
+    validations:
+      required: true
+  - type: textarea
+    id: happened
+    attributes:
+      label: What happened
+      description: What did you expect, and what did you get instead?
+    validations:
+      required: true
+  - type: textarea
+    id: input
+    attributes:
+      label: The input you gave it (only if you can share it)
+      description: A short example is enough. Remove anything private.
+    validations:
+      required: false
