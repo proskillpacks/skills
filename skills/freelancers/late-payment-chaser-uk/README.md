@@ -68,4 +68,4 @@ The start date and the £70 match what the adjudicator awarded in the real case.
 
 Made by Pro Skill Packs. We tested this skill on real public data before release.
 
-The paid **Client-Winning Pack** for UK freelancers and solo consultants is here: {{PACK_URL}}
+The paid **Client-Winning Pack** for UK freelancers and solo consultants is here: https://proskillpacks.github.io/
