@@ -61,3 +61,7 @@ Not affiliated with or endorsed by Shopify Inc. Shopify is a trademark of Shopif
 ## Licence
 
 MIT
+
+## Changelog
+
+See [CHANGELOG.md](CHANGELOG.md) for new skills and fixes.
