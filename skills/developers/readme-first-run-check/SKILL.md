@@ -1,6 +1,6 @@
 ---
 name: readme-first-run-check
-description: Reads a project's README the way a new user would and checks, against the repository itself, every step they are told to take: the prerequisites and versions, the install and setup commands, the files, scripts, environment variables and ports the README mentions, and the run and test commands. It reports each step as OK, BROKEN, MISSING or UNVERIFIED with file evidence, then gives the first-run path a newcomer would actually experience and the README edits that fix it. It does not run installs or touch the network unless the user says so. Use when the user says "does my README work", "check the getting started steps", "first run check", "onboarding docs are out of date", or points at a repo or pastes a README.
+description: Reads a project's README the way a new user would and checks, against the repository itself, every step they are told to take - the prerequisites and versions, the install and setup commands, the files, scripts, environment variables and ports the README mentions, and the run and test commands. It reports each step as OK, BROKEN, MISSING or UNVERIFIED with file evidence, then gives the first-run path a newcomer would actually experience and the README edits that fix it. It does not run installs or touch the network unless the user says so. Use when the user says "does my README work", "check the getting started steps", "first run check", "onboarding docs are out of date", or points at a repo or pastes a README.
 ---
 
 # README First-Run Check
