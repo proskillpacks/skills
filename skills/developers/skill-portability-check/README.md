@@ -18,6 +18,8 @@ Any assistant that reads the open SKILL.md format works.
 
 **No skills support?** Run the script yourself: `python3 scripts/skill_check.py <path>`. Or paste your SKILL.md into the prompt in `prompt.md`.
 
+Every finding starts with a rule ID such as `[SC008]`. Silence a rule with `--ignore SC008,SC013`. The same checker is also packaged as a GitHub Action and pre-commit hook: https://github.com/proskillpacks/skill-check
+
 Needs: Python 3 (standard library only) to run the script. Without a shell, the skill checks a pasted SKILL.md by reading.
 
 ## Works with

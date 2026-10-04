@@ -2,7 +2,7 @@
 """skill_check.py: check Agent Skills (SKILL.md folders) for portability and common mistakes.
 Python 3, standard library only. Read-only. MIT licence, Pro Skill Packs.
 
-    python3 skill_check.py <skill-folder-or-repo> [more paths] [--json] [--strict] [--quiet]
+    python3 skill_check.py <skill-folder-or-repo> [more paths] [--json] [--strict] [--quiet] [--ignore SC008,SC013]
 
 Finds every SKILL.md under the paths and reports, per skill:
   ERRORS (exit code 1): no or unclosed frontmatter; frontmatter that strict YAML parsers reject (for example an
@@ -14,6 +14,7 @@ Finds every SKILL.md under the paths and reports, per skill:
     relies on the web, a shell or a script; body over 500 lines; $ARGUMENTS or $0-style text some tools substitute;
     referenced scripts/ or references/ files that do not exist.
   INFO: bundled script languages, agent product names mentioned, line counts.
+Every finding starts with a rule ID such as [SC008]. --ignore drops the listed rules from the report and from the exit code.
 A folder containing a file named .skill-check-ignore is skipped (use it for test fixtures).
 --strict turns warnings into errors (for CI that should block on warnings). --json prints machine-readable output.
 Patterns for vendor tools, products, paths and fallback phrases are the ones used in our portability study.
@@ -205,6 +206,38 @@ def check_skill(path):
     return res
 
 
+# Rule IDs (additive layer: the checks above are unchanged; this only labels each finding so it can be ignored or searched).
+RULES = [  # (id, regex on the finding text)
+    ("SC001", r"^(no frontmatter|frontmatter is never closed)"),
+    ("SC002", r"^frontmatter: "),
+    ("SC003", r"^missing name"),
+    ("SC004", r"^name "),
+    ("SC005", r"^missing description"),
+    ("SC006", r"^description is \d+ characters \(limit"),
+    ("SC007", r"^description is only"),
+    ("SC008", r"^description does not say when"),
+    ("SC009", r"^frontmatter key .* (is tool-specific|is not in the public spec)"),
+    ("SC010", r"^vendor tool "),
+    ("SC011", r"^vendor path "),
+    ("SC012", r"^text like \$ARGUMENTS"),
+    ("SC013", r"^the text relies on a tool or the network"),
+    ("SC014", r"^body is \d+ lines; move"),
+    ("SC015", r"^broken link"),
+    ("SC016", r"^mentions .* but the file is not"),
+    ("SC100", r"^frontmatter key .* is in the public spec"),
+    ("SC101", r"^agent products named"),
+    ("SC102", r"^body is \d+ lines$"),
+    ("SC103", r"^bundled scripts"),
+]
+
+
+def rule_id(msg):
+    for rid, rx in RULES:
+        if re.search(rx, msg):
+            return rid
+    return "SC999"
+
+
 def find_skills(paths):
     out = []
     for p in paths:
@@ -224,7 +257,18 @@ def find_skills(paths):
 def main():
     a = [x for x in sys.argv[1:]]
     flags = {x for x in a if x.startswith("--")}
-    paths = [x for x in a if not x.startswith("--")]
+    ignore = set()
+    skip_next = False
+    paths = []
+    for i, x in enumerate(a):
+        if skip_next:
+            skip_next = False
+        elif x == "--ignore":
+            skip_next = True
+            if i + 1 < len(a):
+                ignore |= {t.strip().upper() for t in a[i + 1].split(",") if t.strip()}
+        elif not x.startswith("--"):
+            paths.append(x)
     if not paths or "--help" in flags:
         print(__doc__)
         sys.exit(2)
@@ -233,6 +277,9 @@ def main():
         print("no SKILL.md found under: " + " ".join(paths))
         sys.exit(2)
     results = [check_skill(s) for s in skills]
+    for r in results:
+        for k in ("errors", "warnings", "info"):
+            r[k] = [f"[{rule_id(m)}] {m}" for m in r[k] if rule_id(m) not in ignore]
     strict = "--strict" in flags
     n_err = sum(len(r["errors"]) + (len(r["warnings"]) if strict else 0) for r in results)
     if "--json" in flags:
