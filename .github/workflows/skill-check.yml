@@ -1,0 +1,13 @@
+# Fails the build when a SKILL.md has an error (strict YAML, name or description problems, broken links).
+# Warnings are shown in the log. Test fixtures are skipped through their .skill-check-ignore file.
+name: skill-check
+on: [push, pull_request]
+jobs:
+  skill-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch the checker
+        run: curl -fsSL https://raw.githubusercontent.com/proskillpacks/skills/main/skills/developers/skill-portability-check/scripts/skill_check.py -o /tmp/skill_check.py
+      - name: Check every skill
+        run: python3 /tmp/skill_check.py skills --quiet
