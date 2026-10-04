@@ -1,0 +1,13 @@
+# .github/workflows/skill-check.yml: fails the build when a SKILL.md has an error (warnings are shown, not failing).
+name: skill-check
+on: [push, pull_request]
+jobs:
+  skill-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch the checker
+        run: curl -fsSL https://raw.githubusercontent.com/proskillpacks/skills/main/skills/developers/skill-portability-check/scripts/skill_check.py -o skill_check.py
+      - name: Check every skill
+        run: python3 skill_check.py . --quiet
+      # To fail on warnings too, use: python3 skill_check.py . --strict --quiet

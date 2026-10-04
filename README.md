@@ -23,6 +23,7 @@ They work in any assistant that reads `SKILL.md` files: Claude Code, OpenAI Code
 | Developers | [changelog-from-commits](skills/developers/changelog-from-commits) | A commit range or pasted git log | A user-facing changelog in Keep a Changelog style, with the commit behind each line and the vague commits flagged |
 | Developers | [readme-first-run-check](skills/developers/readme-first-run-check) | A repository (or the README and manifests) | Every setup step marked OK, BROKEN, MISSING or UNVERIFIED with evidence, and the README edits that fix it |
 | Developers | [test-gap-finder](skills/developers/test-gap-finder) | A diff and the project's tests | The behaviours the change adds or alters, each marked Covered, Not covered or Unknown, and ranked test cases for the gaps |
+| Developers | [skill-portability-check](skills/developers/skill-portability-check) | A skill folder or a repository of skills | A per-skill report of strict-YAML, portability and fallback problems, with the exact fixes; non-zero exit for CI |
 
 ## Install
 
