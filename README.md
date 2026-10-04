@@ -17,6 +17,7 @@ They work in any assistant that reads `SKILL.md` files: Claude Code, OpenAI Code
 | Marketing and SEO | [ai-search-readiness-check](skills/marketing-seo/ai-search-readiness-check) | A website URL | A 0 to 100 score from 8 checks on whether AI search tools can read the site, plus a fix list |
 | Marketing and SEO | [search-intent-page-brief](skills/marketing-seo/search-intent-page-brief) | A target keyword and the pages that rank for it | The search intent, a coverage table, the gaps and an outline for a new page |
 | Freelancers | [late-payment-chaser-uk](skills/freelancers/late-payment-chaser-uk) | One late invoice | The statutory interest and fixed recovery sum worked out, and a chaser message (UK) |
+| Writing | [fact-claim-checker](skills/writing/fact-claim-checker) | A draft you are about to publish | The claims that need a source, ranked by risk, with what would settle each and safer wording |
 | Developers | [pr-description-and-review-prep](skills/developers/pr-description-and-review-prep) | A git diff or branch | A pull request description and the questions a reviewer is likely to ask |
 | Developers | [accessibility-quick-audit](skills/developers/accessibility-quick-audit) | A page's HTML, a URL or component files | Accessibility issues ranked by impact, with the WCAG criterion, the code and a fix |
 
