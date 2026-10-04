@@ -7,6 +7,7 @@ What changed in this repository, newest first. New skills, fixes and changes tha
 ### Changed (from our own tests)
 - Skills that write text for other people to read now carry one standard rule: anything the input marks as unsure, unconfirmed or missing stays marked (for example `[CONFIRM: ...]`) in every output, including the final text, and is never restated as fact. It is in each skill's `SKILL.md` rules and in its `prompt.md`. In our second test runs, three of four defects were an unsure fact restated as fact in text meant for a customer.
 - `skill-portability-check`: the checker is now v1.1.0 and adds warning SC017 for a skill that says it writes text for others but has no rule about unsure input. The same version is in https://github.com/proskillpacks/skill-check .
+- `fact-claim-checker`: the summary counts must now match the claims table. `csv-profile-and-sanity-check`: it never writes a cleaned copy, even when asked, and lists each change as row, column, from, to instead.
 - `ai-search-readiness-check`: the helper now reports a response it cannot decode (for example Brotli) instead of reading garbage.
 
 ## 2026-10-04

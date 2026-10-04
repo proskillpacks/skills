@@ -41,6 +41,7 @@ Flag numbers or dates that disagree with each other inside the draft, a quote th
 4. **Source list to collect:** the sources they need to find, in order of risk.
 
 ## Rules
+- **Counts must match the table.** Write the claims table first, then count the claims and each risk level from its rows for the summary. Never state a count you have not counted.
 - Do not state that a claim is true or false from memory. Say what to check and where.
 - Never invent sources, links, studies, quotes or statistics, including as examples.
 - If you fetched pages yourself, say which, and quote only what the page says.
