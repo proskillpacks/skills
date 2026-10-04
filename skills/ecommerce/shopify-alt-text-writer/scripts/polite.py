@@ -31,7 +31,7 @@ class RobotsDisallowed(Exception):
 
 
 def user_agent(tool, version="1.0"):
-    return f"{tool}/{version} (read-only helper run for a user; +{INFO_URL}; python-urllib)"
+    return f"{tool}/{version} (read-only helper run for a user; +{INFO_URL})"
 
 
 def _wait(host, gap=1.0):

@@ -11,7 +11,7 @@ the whole site is off limits. Waits 1 second between requests (about 15 in total
 """
 import gzip, html, json, os, re, statistics, sys, time, urllib.error, urllib.parse, urllib.request, zlib
 
-UA_OWN = "AgentReadyQuickCheck/1.0 (read-only; python-urllib)"
+UA_OWN = "AgentReadyQuickCheck/1.0 (read-only)"
 AI_LIVE = ["OAI-SearchBot", "ChatGPT-User", "PerplexityBot", "Perplexity-User", "Claude-SearchBot", "Claude-User", "Googlebot", "Bingbot"]
 REVIEW_APPS = {"Judge.me": r"jdgm-|judge\.me/", "Yotpo": r"yotpo\.com|shopify://apps/yotpo", "Okendo": r"okendo\.io|shopify://apps/okendo",
                "Loox": r"loox\.io", "Stamped": r"stamped\.io", "Junip": r"junip\.co", "Reviews.io": r"reviews\.io/",
