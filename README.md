@@ -24,6 +24,11 @@ They work in any assistant that reads `SKILL.md` files: Claude Code, OpenAI Code
 | Developers | [readme-first-run-check](skills/developers/readme-first-run-check) | A repository (or the README and manifests) | Every setup step marked OK, BROKEN, MISSING or UNVERIFIED with evidence, and the README edits that fix it |
 | Developers | [test-gap-finder](skills/developers/test-gap-finder) | A diff and the project's tests | The behaviours the change adds or alters, each marked Covered, Not covered or Unknown, and ranked test cases for the gaps |
 | Developers | [skill-portability-check](skills/developers/skill-portability-check) | A skill folder or a repository of skills | A per-skill report of strict-YAML, portability and fallback problems, with the exact fixes; non-zero exit for CI |
+| Sales | [cold-email-checker](skills/sales/cold-email-checker) | A cold email draft and the prospect's page text | A verdict, a claims table, a tightened draft and the commercial email basics it is missing |
+| Data | [csv-profile-and-sanity-check](skills/data/csv-profile-and-sanity-check) | A CSV file | A read-only profile of every column, flags, and questions for the data's owner |
+| Careers | [job-post-decoder](skills/careers/job-post-decoder) | A job post | What the job is, firm and wish requirements, what is missing, and questions for the recruiter |
+| Support | [angry-customer-reply-check](skills/support/angry-customer-reply-check) | A customer complaint, your draft reply and your policy | A check of promises, facts and tone, and a repaired draft |
+| Finance | [invoice-checker](skills/finance/invoice-checker) | An invoice | A recomputed total, the differences, missing fields and consistency flags (no tax advice) |
 
 ## Install
 
