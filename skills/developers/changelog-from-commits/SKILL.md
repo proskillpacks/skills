@@ -31,7 +31,7 @@ Use these headings only where there is something to say: **Added**, **Changed**,
 After the changelog, list:
 - **Vague commits** (message does not say what changed, such as "fix", "update", "wip"): `[CHECK: <hash> "<message>"]` with what the diff shows if you read it, or what to look at.
 - **Possible breaking changes:** only from evidence: the message says BREAKING or has `!`, or the diff you read removes or renames something public. Otherwise say none were evident and that you did not read every diff.
-- **Skipped commits:** a count and the hashes.
+- **Skipped commits:** list each hash once, then state the count by counting the listed hashes (with your tools, `wc -l` on the list; never from memory). Skipped plus included must equal the commits in the range. A commit in a note (for example "also touched X") is not listed twice.
 
 ## Rules
 - No invented version, date, release name or contributor list.

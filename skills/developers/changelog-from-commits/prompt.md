@@ -22,7 +22,7 @@ Anything I mark as unsure, unconfirmed or missing stays marked (for example [CON
 1. Decide for each commit whether it is user-facing. Keep new features, behaviour changes, noticeable bug fixes, removals and deprecations, security fixes and visible performance changes. Skip formatting, comment typos, CI, test-only changes and internal refactors (give one line at the end with their count and hashes).
 2. Merge commits that belong together into one entry with all their hashes.
 3. Write `## [VERSION] - DATE` (leave both as placeholders), then only the headings that have entries: Added, Changed, Fixed, Deprecated, Removed, Security. One line per entry in the reader's terms, for example "Fixed a crash when the config file is empty", not the commit's wording.
-4. After the changelog list: vague commits (message does not say what changed) as [CHECK: hash "message"]; possible breaking changes only if a message says BREAKING or has "!" (otherwise say none were evident and that you saw only messages); skipped commits.
+4. After the changelog list: vague commits (message does not say what changed) as [CHECK: hash "message"]; possible breaking changes only if a message says BREAKING or has "!" (otherwise say none were evident and that you saw only messages); skipped commits: list each hash once and give the count by counting the list. Skipped plus included must equal the commits in the range.
 No marketing language.
 
 Here is the git log:
