@@ -1,5 +1,11 @@
 # Free Agent Skills
 
+Two real runs, shortened. Each skill is shown on a real project or file.
+
+![readme-first-run-check on a real repo: finds that the README's yarn start step does not exist](docs/demos/readme-first-run-check.gif)
+
+![csv-profile-and-sanity-check on a real CSV: blanks, outliers and questions for the data's owner](docs/demos/csv-profile-and-sanity-check.gif)
+
 Free, tested [Agent Skills](https://agentskills.io) in the plain `SKILL.md` format, grouped by profession. Each skill does one job from start to finish. Each folder also has a `prompt.md`, a paste-in version for ChatGPT or any chatbot without skills support.
 
 They work in any assistant that reads `SKILL.md` files: Claude Code, OpenAI Codex, Gemini CLI, Cursor, GitHub Copilot and others. Helper scripts, where a skill has them, use only the Python 3 standard library. MIT licence.
