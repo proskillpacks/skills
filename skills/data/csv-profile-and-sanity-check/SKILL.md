@@ -1,6 +1,6 @@
 ---
 name: csv-profile-and-sanity-check
-description: Reads a CSV or spreadsheet export without changing it and reports what is in it: row and column counts, each column's type, blanks, distinct values, numeric ranges, duplicates, mixed formats, odd outliers and case or spacing variants, then lists what to ask the data's owner before anyone uses it. Use when someone has a CSV or exported sheet and says "what is in this file", "is this data OK", "sanity check this export", "profile this CSV", or before cleaning, joining or analysing a file.
+description: Reads a CSV or spreadsheet export without changing it and reports what is in it, including row and column counts, each column's type, blanks, distinct values, numeric ranges, duplicates, mixed formats, odd outliers and case or spacing variants, then lists what to ask the data's owner before anyone uses it. Use when someone has a CSV or exported sheet and says "what is in this file", "is this data OK", "sanity check this export", "profile this CSV", or before cleaning, joining or analysing a file.
 ---
 
 # CSV profile and sanity check
