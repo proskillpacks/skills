@@ -1,0 +1,45 @@
+# Free Agent Skills
+
+Free, tested [Agent Skills](https://agentskills.io) in the plain `SKILL.md` format, grouped by profession. Each skill does one job from start to finish. Each folder also has a `prompt.md`, a paste-in version for ChatGPT or any chatbot without skills support.
+
+They work in any assistant that reads `SKILL.md` files: Claude Code, OpenAI Codex, Gemini CLI, Cursor, GitHub Copilot and others. Helper scripts, where a skill has them, use only the Python 3 standard library. MIT licence.
+
+## Skills by category
+
+| Category | Skill | Give it | You get |
+|---|---|---|---|
+| E-commerce | [shopify-alt-text-writer](skills/ecommerce/shopify-alt-text-writer) | A store URL, product URL or product export CSV | Alt text for each product image, as a Shopify import CSV and a review sheet |
+| E-commerce | [shopify-policy-checker](skills/ecommerce/shopify-policy-checker) | A store URL | An audit of refund, shipping, privacy, terms and contact policies, with paste-ready fixes |
+| E-commerce | [product-title-cleaner](skills/ecommerce/product-title-cleaner) | A store, collection URL or export CSV | One consistent title pattern, as an import CSV of changed rows |
+| E-commerce | [agent-ready-quick-check](skills/ecommerce/agent-ready-quick-check) | A store URL | A 6-check scorecard of how AI shopping agents read the store |
+| E-commerce | [review-reply-drafter](skills/ecommerce/review-reply-drafter) | Pasted reviews, a CSV or a public review page | A reply for each review, with the ones that need you flagged |
+| E-commerce | [chargeback-evidence-checklist](skills/ecommerce/chargeback-evidence-checklist) | The dispute reason | The evidence to gather before you write the response |
+| Marketing and SEO | [ai-search-readiness-check](skills/marketing-seo/ai-search-readiness-check) | A website URL | A 0 to 100 score from 8 checks on whether AI search tools can read the site, plus a fix list |
+| Freelancers | [late-payment-chaser-uk](skills/freelancers/late-payment-chaser-uk) | One late invoice | The statutory interest and fixed recovery sum worked out, and a chaser message (UK) |
+| Developers | [pr-description-and-review-prep](skills/developers/pr-description-and-review-prep) | A git diff or branch | A pull request description and the questions a reviewer is likely to ask |
+
+## Install
+
+```
+npx skills add proskillpacks/skills
+```
+
+Or copy the folders you want into `.agents/skills/` (one project) or `~/.agents/skills/` (all projects). Claude Code also reads `~/.claude/skills/`, and Gemini CLI reads `~/.gemini/skills/`. For other tools see https://agentskills.io/clients.
+
+**No skills support?** Paste the `prompt.md` from a skill folder into a new chat and add your own text where it says to. The prompt versions have no scripts or web access, so they ask you to paste in the page text an installed skill would fetch itself.
+
+## How we test
+
+Each skill is run on real public data, such as public stores, reviews and policy pages. We read the output ourselves and fix what is wrong before release. Nothing here posts or changes anything for you. You review the output and apply it yourself.
+
+## More
+
+Pro Skill Packs also sells paid packs for Shopify store owners and short-term rental hosts. We make them, and these free skills are separate from them. The full catalogue is at https://proskillpacks.github.io and the shop is at https://proskillpacks.gumroad.com. The data behind the quick check is in our [100-store study](https://proskillpacks.github.io/study/).
+
+Found a wrong output? Open an issue with the input you used and what went wrong. Updates: [@KaiVenturaBuild](https://x.com/KaiVenturaBuild).
+
+Not affiliated with or endorsed by Shopify Inc. Shopify is a trademark of Shopify Inc.
+
+## Licence
+
+MIT

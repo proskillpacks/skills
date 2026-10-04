@@ -1,0 +1,50 @@
+{
+ "study": "State of Agent-Ready Shopify, October 2026",
+ "stores_measured": 99,
+ "sample": "100 Shopify stores (large brands, mid-size brands, small independent stores) in the US, UK, EU, AU/NZ and CA, audited 3 October 2026. Aggregate statistics only; not a random sample of all Shopify merchants.",
+ "pass_pct": {
+  "ai_access": 95,
+  "ship_returns_schema": 12,
+  "rating_schema": 28,
+  "gtin_schema": 48,
+  "descriptions": 43,
+  "alt_text": 35
+ },
+ "n": {
+  "ai_access": 99,
+  "ship_returns_schema": 99,
+  "rating_schema": 99,
+  "gtin_schema": 99,
+  "descriptions": 97,
+  "alt_text": 98
+ },
+ "checks_passed_of_6": {
+  "median": 3,
+  "p25": 2,
+  "p75": 3,
+  "distribution": {
+   "0": 3,
+   "1": 14,
+   "2": 31,
+   "3": 27,
+   "4": 19,
+   "5": 5,
+   "6": 0
+  }
+ },
+ "median_pct_products_80plus_words": 36,
+ "median_store_median_description_words": 69,
+ "median_avg_image_alt_pct": 20.0,
+ "other": {
+  "pct_blocking_any_ai_search_or_shopping_agent": 0,
+  "pct_llms_txt_present": 95,
+  "rating_status_counts": {
+   "zero_reviews": 6,
+   "reviews_shown_no_schema": 17,
+   "no_reviews_app": 21,
+   "partial": 6,
+   "schema_ok": 28,
+   "js_only": 21
+  }
+ }
+}
