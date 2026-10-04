@@ -16,7 +16,7 @@ Run `python3 <skill>/scripts/site_check.py ai <url>` (the script is in this skil
 
 If the home page could not be fetched (`home_status` not 200, or `fetch_error`), say so with the status, give no score, and stop. If robots.txt blocks our own checker (`score` is null), say that the site asks automated readers to stay out and give no score. If the output still lists `ai_search_agents`, report which AI search agents and training crawlers robots.txt blocks (that comes from robots.txt alone), then stop. If the output has a `finding` (robots.txt returned a server error), report it as the main problem: crawlers that follow the robots.txt standard treat the whole site as blocked until robots.txt loads.
 
-If the script can't reach the site at all (a network error, not an HTTP status), say so and offer the prompt version instead: the user pastes the page source and robots.txt into it.
+If the script can't reach the site at all (a network error or an unreadable response such as a content encoding it cannot decode, not an HTTP status), say so and offer the prompt version instead: the user pastes the page source and robots.txt into it.
 
 ## Step 2: Write the report
 Use exactly this structure. Copy every number, status and evidence string from the script; never estimate or recount one, and don't comment on the script's output format.

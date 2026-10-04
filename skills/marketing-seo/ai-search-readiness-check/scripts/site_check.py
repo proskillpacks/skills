@@ -95,13 +95,13 @@ def _path_q(url):
     return (p.path or "/") + (f"?{p.query}" if p.query else "")
 
 
-def _get(url):
+def _get(url, identity=False):
     wait = 1.0 - (time.time() - _last[0])
     if wait > 0:
         time.sleep(wait)
     _last[0] = time.time()
     req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "text/html,text/plain,*/*",
-                                               "Accept-Encoding": "gzip, deflate"})
+                                               "Accept-Encoding": "identity" if identity else "gzip, deflate"})
     try:
         with _opener.open(req, timeout=25) as r:
             raw, enc, st, final, ctype = r.read(5_000_000), r.headers.get("Content-Encoding", ""), r.status, r.geturl(), \
@@ -113,6 +113,11 @@ def _get(url):
         return None, f"blocked: {e}", url, "", ""
     except Exception as e:
         return None, f"{type(e).__name__}: {e}", url, "", ""
+    enc = enc.lower().strip()
+    if enc not in ("", "identity", "gzip", "deflate"):
+        if not identity:
+            return _get(url, identity=True)   # some servers send brotli or another encoding we did not ask for: ask once for plain text
+        return None, f"unreadable: the server sent Content-Encoding '{enc}', which this helper cannot decode (Python standard library only)", url, "", ""
     try:
         raw = gzip.decompress(raw) if "gzip" in enc else (zlib.decompress(raw) if "deflate" in enc else raw)
     except Exception:
