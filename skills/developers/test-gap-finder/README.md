@@ -1,5 +1,7 @@
 # Test Gap Finder
 
+![test-gap-finder on a real example, shortened](../../../docs/demos/test-gap-finder.gif)
+
 Give it a diff and the project's tests. You get the behaviours the change adds or alters, each marked Covered, Not covered or Unknown against the tests, and proposed test cases for the gaps with inputs and expected results taken from the code. It never gives a coverage percentage and never says a test passes unless it ran.
 
 ## What it does

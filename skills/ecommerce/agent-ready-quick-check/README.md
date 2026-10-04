@@ -1,5 +1,7 @@
 # agent-ready-quick-check
 
+![agent-ready-quick-check on a real example, shortened](../../../docs/demos/agent-ready-quick-check.gif)
+
 A free Agent Skill that checks, in about 30 seconds, how well AI shopping agents (ChatGPT, Perplexity, Gemini and Google AI Mode, Copilot, Claude) can read your Shopify store, and compares your store with 99 other Shopify stores.
 
 Give it your store URL. That's all it needs.

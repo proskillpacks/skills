@@ -1,5 +1,7 @@
 # product-title-cleaner
 
+![product-title-cleaner on a real example, shortened](../../../docs/demos/product-title-cleaner.gif)
+
 A free Agent Skill that gives your whole Shopify catalogue one consistent title pattern and hands you a CSV you can import as is.
 
 It works out the pattern most of your titles already follow. Then it fixes only the titles that break it:

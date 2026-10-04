@@ -1,5 +1,7 @@
 # review-reply-drafter
 
+![review-reply-drafter on a real example, shortened](../../../docs/demos/review-reply-drafter.gif)
+
 A free Agent Skill that drafts replies to your store's reviews. Paste in reviews from Judge.me, Shopify Product Reviews, Yotpo, Okendo, Google or Trustpilot, and you get back a reply for each one, ready to paste.
 
 - **Happy customers** get thanked for the specific thing they said, not "Thanks for your review!"

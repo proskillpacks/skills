@@ -1,5 +1,7 @@
 # Skill Portability Check
 
+![skill-portability-check on a real example, shortened](../../../docs/demos/skill-portability-check.gif)
+
 A free checker for Agent Skills. Point it at a skill folder or a whole repository of skills and it reports, per SKILL.md, the things that make a skill fail to load or stop it working outside one assistant: frontmatter that strict YAML parsers reject, keys other than name and description, vendor tool names and paths, missing fallbacks, long bodies and broken links. One Python file, standard library only, with a non-zero exit code for CI.
 
 ## What it does

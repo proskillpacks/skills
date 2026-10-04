@@ -1,5 +1,7 @@
 # Changelog from Commits
 
+![changelog-from-commits on a real example, shortened](../../../docs/demos/changelog-from-commits.gif)
+
 Give it a commit range in a repo, or paste `git log` output. You get a changelog section in Keep a Changelog style, written for the people who use the project, with the commit hash behind every line. Vague commits and possible breaking changes are flagged instead of guessed.
 
 ## What it does

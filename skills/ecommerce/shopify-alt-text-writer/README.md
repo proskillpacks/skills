@@ -1,5 +1,7 @@
 # shopify-alt-text-writer
 
+![shopify-alt-text-writer on a real example, shortened](../../../docs/demos/shopify-alt-text-writer.gif)
+
 A free Agent Skill that writes alt text for your Shopify product images. It **looks at each photo** and describes what's actually in it: the angle, the detail, the colour, the model. Then it gives you a CSV you can import into Shopify.
 
 Give it a store URL, a product URL, or your product export CSV (Products > Export). That's all it needs.

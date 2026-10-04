@@ -1,5 +1,7 @@
 # ai-search-readiness-check
 
+![ai-search-readiness-check on a real example, shortened](../../../docs/demos/ai-search-readiness-check.gif)
+
 *Free from Pro Skill Packs, for marketers and small agencies who fix client websites.* The Page Fix Sheet (9 USD) checks one page's title, description, headings, canonical and structured data, and writes replacements from the page's own facts: https://proskillpacks.github.io/
 
 Give it a website address. It checks whether AI search tools such as ChatGPT search, Perplexity, Claude and Google can read the home page, and gives a score out of 100 from 8 checks, the evidence for each, and the fixes in order. A script does the fetching and scoring, so the same site gets the same score.

@@ -1,5 +1,7 @@
 # CSV Profile and Sanity Check
 
+![csv-profile-and-sanity-check on a real example, shortened](../../../docs/demos/csv-profile-and-sanity-check.gif)
+
 Give it a CSV. It runs a small read-only script (Python 3 standard library) and reports rows, columns, each column's type, blanks, distinct values, ranges, duplicates, mixed formats, stray spaces, case variants and outliers, then lists questions to ask the data's owner. Without code execution it profiles a pasted sample and says so.
 
 ## Install

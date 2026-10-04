@@ -1,5 +1,7 @@
 # Cold Email Checker
 
+![cold-email-checker on a real example, shortened](../../../docs/demos/cold-email-checker.gif)
+
 Give it a cold email draft and the text of the prospect's page. It tests every claim about the prospect against that text, flags claims about you that need proof, checks the subject line, the single ask and the length, and lists the commercial email basics from the US FTC's CAN-SPAM guide that the draft is missing. You get a verdict, a claims table, quoted issues and a tightened version with unsupported claims removed.
 
 ## Install

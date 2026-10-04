@@ -1,5 +1,7 @@
 # late-payment-chaser-uk
 
+![late-payment-chaser-uk on a real example, shortened](../../../docs/demos/late-payment-chaser-uk.gif)
+
 A free skill for UK freelancers, consultants and small suppliers. Not legal advice.
 
 Give it one unpaid business invoice (amount, invoice date, and the due date if you agreed one). It works out what you can claim for late payment under UK law, shows the working with links to the official sources, and writes three reminder emails you can send after filling in the names.

@@ -1,5 +1,7 @@
 # README First-Run Check
 
+![readme-first-run-check on a real example, shortened](../../../docs/demos/readme-first-run-check.gif)
+
 Point it at a repository. It follows the README like a new user would and checks every step against the repo: versions, scripts, files, environment variables, ports and links. You get each step marked OK, BROKEN, MISSING or UNVERIFIED with evidence, the first-run path a newcomer would actually take, and the README edits that fix it.
 
 ## What it does

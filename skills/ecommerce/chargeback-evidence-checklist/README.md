@@ -1,5 +1,7 @@
 # Chargeback Evidence Checklist (free)
 
+![chargeback-evidence-checklist on a real example, shortened](../../../docs/demos/chargeback-evidence-checklist.gif)
+
 Got a chargeback on Shopify Payments? Before you write anything, find out what to collect. Tell this skill the dispute reason and what happened, in your own words. It gives you:
 
 - **Five first checks:** chargeback or inquiry, due date, already refunded, Shopify Protect, and whether the customer is right.

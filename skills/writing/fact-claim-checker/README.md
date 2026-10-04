@@ -1,5 +1,7 @@
 # Fact-Claim Checker
 
+![fact-claim-checker on a real example, shortened](../../../docs/demos/fact-claim-checker.gif)
+
 Paste a draft before you publish it. You get a list of the claims that need a source, ranked by risk, with the kind of source that would settle each one, and safer wording for the high-risk ones you cannot back up. It does not tell you what is true. It tells you what to check.
 
 ## What it does
