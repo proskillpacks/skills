@@ -20,7 +20,7 @@ Qwen3.8-27B, driven by the `pi` coding agent, 8 selection tasks with 6 runs each
 
 `q4` note: three of its four failures were 15-minute timeouts on the 50-page catalogue crawl, after the practice site began answering 403 under four concurrent crawls. That is the benchmark throttling, not the skill.
 
-This folder holds `q2` plus the same hand-added Setup section as Agent Browse.
+The skill file is `q2` plus the same hand-added Setup section as Agent Browse.
 
 ## Limits
 - Held-out test pending. The figures above are on the selection split, which the gate used to choose the skill, so they are optimistic.
