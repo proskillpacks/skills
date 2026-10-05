@@ -2,6 +2,11 @@
 
 What changed in this repository, newest first. New skills, fixes and changes that came from feedback. Dates are UTC.
 
+## 2026-10-05
+
+### Added
+- `agent-browse` (Developers): a browsing skill for the agent-browser CLI, trained and gated instead of hand-written. About 14% cheaper per task than no skill on 11 unseen tasks, with the same accuracy. Research repo: https://github.com/proskillpacks/skillopt-agent-browse
+
 ## 2026-10-04 (later)
 
 ### Changed (from our own tests)
