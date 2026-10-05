@@ -6,7 +6,7 @@ It was trained the same way as Agent Browse: scored tasks, and only edits that m
 
 The test harness, every candidate version (accepted and rejected) and the run data are in the research repo: https://github.com/proskillpacks/skillopt-agent-browse (Part 2 of the write-up).
 
-## Result so far: selection split only
+## Example result: selection split only, held-out test pending
 Qwen3.8-27B, driven by the `pi` coding agent, 8 selection tasks with 6 runs each (48 rollouts per skill). The held-out test is pending: those runs were still in progress when this was written, so there is no unseen-task result yet.
 
 | Skill | Edits | Correct | Score | Tokens per task | Turns | Decision |
@@ -36,6 +36,8 @@ This folder holds `q2` plus the same hand-added Setup section as Agent Browse.
 3. Ask for a browser task in plain words, for example: "Open the page, find the price table and give me the rows."
 
 Needs a shell tool that is allowed to run `agent-browser`.
+## Tested
+Tested with Qwen3.8-27B on a local OpenAI-compatible server, driven by the `pi` coding agent, with the agent-browser CLI, on the task set in the research repo. Not tested with other models or assistants.
 
 ---
 
