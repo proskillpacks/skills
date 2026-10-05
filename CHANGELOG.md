@@ -5,6 +5,7 @@ What changed in this repository, newest first. New skills, fixes and changes tha
 ## 2026-10-05
 
 ### Added
+- `agent-browse-qwen` (Developers): the Agent Browse skill retargeted at Qwen3.8-27B and similar local models. Scored on the selection split only; the held-out test is pending. Research repo, Part 2: https://github.com/proskillpacks/skillopt-agent-browse
 - `agent-browse` (Developers): a browsing skill for the agent-browser CLI, trained and gated instead of hand-written. About 14% cheaper per task than no skill on 11 unseen tasks, with the same accuracy. Research repo: https://github.com/proskillpacks/skillopt-agent-browse
 
 ## 2026-10-04 (later)
