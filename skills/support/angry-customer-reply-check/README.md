@@ -32,3 +32,5 @@ Any assistant that reads SKILL.md (Claude, Codex, Gemini CLI, Cursor, GitHub Cop
 Made by Pro Skill Packs. MIT licensed: use it, change it, share it.
 
 More skills: https://proskillpacks.github.io/ . Pairs with the paid Support Macro and Escalation Writer.
+
+Wording you can copy without the skill: [replies and emails for store owners](https://proskillpacks.github.io/stores/)

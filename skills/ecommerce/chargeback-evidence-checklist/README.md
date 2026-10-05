@@ -67,3 +67,5 @@ Not legal advice. Not affiliated with or endorsed by Shopify Inc.
 Made by Pro Skill Packs.
 
 More skills: https://proskillpacks.github.io/
+
+Wording you can copy without the skill: [checklists by reason](https://proskillpacks.github.io/free/chargeback-checklists/)

@@ -57,3 +57,5 @@ The paid **Store Ops Pack** for Shopify store owners (AI-agent readiness audit f
 Not affiliated with or endorsed by Shopify Inc.
 
 More skills: https://proskillpacks.github.io/
+
+Wording you can copy without the skill: [review replies](https://proskillpacks.github.io/stores/how-to-respond-to-a-negative-review/)

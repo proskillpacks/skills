@@ -32,3 +32,5 @@ Any assistant that reads SKILL.md (Claude, Codex, Gemini CLI, Cursor, GitHub Cop
 Made by Pro Skill Packs. MIT licensed: use it, change it, share it.
 
 More skills: https://proskillpacks.github.io/ . Pairs with the paid Expense Categoriser.
+
+Wording you can copy without the skill: [how to check an invoice](https://proskillpacks.github.io/freelance/how-to-check-an-invoice-is-correct/)

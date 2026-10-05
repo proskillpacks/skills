@@ -12,6 +12,27 @@ They work in any assistant that reads `SKILL.md` files: Claude Code, OpenAI Code
 
 **Prefer a document?** [The Free Prompt Book](docs/free-prompt-book-v1.0.pdf) is one PDF with all 21 prompts, grouped by job. Copy one into ChatGPT, Claude, Gemini or any chatbot.
 
+## Free pages you can use without installing anything
+
+Some of what the skills do is also on plain web pages you can read and copy from. No sign-up, no install.
+
+- [Holiday let hosts](https://proskillpacks.github.io/hosts/): replies to guest reviews, house rules and listing wording.
+- [Freelancers](https://proskillpacks.github.io/freelance/): late payment emails and a UK interest calculator.
+- [Sales](https://proskillpacks.github.io/sales/): follow-up and cold emails.
+- [Managers](https://proskillpacks.github.io/managers/): performance review phrases and one-to-one questions.
+- [Online store owners](https://proskillpacks.github.io/stores/): review replies, refund and delay emails.
+- [Work](https://proskillpacks.github.io/work/): letters for hard moments at work.
+- [How we train skills](https://proskillpacks.github.io/research/how-we-train-skills/): a case study with the numbers.
+
+Six pages people use most:
+
+- [How to reply to a bad guest review](https://proskillpacks.github.io/hosts/how-to-respond-to-a-bad-guest-review/)
+- [Late payment reminder emails](https://proskillpacks.github.io/freelance/late-payment-reminder-email/)
+- [Late payment interest calculator (UK)](https://proskillpacks.github.io/freelance/late-payment-interest-calculator/)
+- [Follow-up emails](https://proskillpacks.github.io/sales/sales-follow-up-email-template/)
+- [Performance review phrases for communication](https://proskillpacks.github.io/managers/performance-review-phrases-communication/)
+- [Chargeback checklist by reason](https://proskillpacks.github.io/free/chargeback-checklists/)
+
 ## Skills by category
 
 | Category | Skill | Give it | You get |
